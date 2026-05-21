@@ -1,8 +1,10 @@
 # git-BUH
 
+**Archivo del programa:** `git-BUH.sh`
+
 Programa interactivo en bash para **aprender Git de cero**: instala y configura Git en Ubuntu, explica cómo preparar tu cuenta de GitHub, y guía diez ejercicios prácticos con verificación automática (del repositorio local al flujo profesional).
 
-Todo el texto del menú y las guías está en **español**. Los ejercicios se ejecutan en el **directorio desde el que lanzas** `./git-BUH` (tu sandbox de práctica).
+Todo el texto del menú y las guías está en **español**. Los ejercicios se ejecutan en el **directorio desde el que lanzas** `./git-BUH.sh` (tu sandbox de práctica).
 
 ## Requisitos
 
@@ -21,8 +23,15 @@ En Ubuntu/Debian la opción 0 puede instalar paquetes con `sudo` si lo confirmas
 ```bash
 mkdir -p ~/practica-git
 cd ~/practica-git
-chmod +x /ruta/a/git-BUH
-/ruta/a/git-BUH
+chmod +x /ruta/a/git-BUH.sh
+/ruta/a/git-BUH.sh
+```
+
+Desde el directorio del repositorio del programa:
+
+```bash
+chmod +x git-BUH.sh
+./git-BUH.sh
 ```
 
 En el menú escribe `0` la primera vez, luego sigue del `1` al `10`. Pulsa **`r`** para ver este README dentro del programa. Para salir: `q` o `salir`.
@@ -105,7 +114,7 @@ La opción 0 se marca completada (✓) cuando hay **Git en el PATH** y **user.na
 
 | Situación | Qué hacer |
 |-----------|-----------|
-| **Varios usuarios Linux** (`juan`, `maria`, …) | Cada uno ejecuta git-BUH con su usuario. Cada uno tiene su `~/.ssh/` y su `~/.config/git-buh/`. |
+| **Varios usuarios Linux** (`juan`, `maria`, …) | Cada uno ejecuta `./git-BUH.sh` con su usuario. Cada uno tiene su `~/.ssh/` y su `~/.config/git-buh/`. |
 | **Un usuario, varias cuentas GitHub** | Una clave por cuenta (p. ej. `~/.ssh/id_ed25519_trabajo`) y bloques `Host` en `~/.ssh/config`. Remoto: `git@github.com-trabajo:org/repo.git`. |
 | **Preferencia guardada** | `~/.config/git-buh/clave-ssh-preferida` y `host-github` |
 
@@ -124,7 +133,7 @@ El ejercicio 9 reutiliza el flujo SSH y exige que `ssh -T` con GitHub funcione c
 - **9** — Cliente SSH, clave en `~/.ssh/`, prueba exitosa con GitHub.
 - **10** — Rama `feature/release-prep`, merge `--no-ff`, tag `v1.0.0`, ≥ 8 commits.
 
-## Archivos y carpetas que puede crear git-BUH
+## Archivos y carpetas que puede crear git-BUH.sh
 
 | Ruta | Cuándo |
 |------|--------|
@@ -144,14 +153,14 @@ El ejercicio 9 reutiliza el flujo SSH y exige que `ssh -T` con GitHub funcione c
 
 ```
 ejercicios_git_basicos/
-├── git-BUH      # Programa principal (menú, opción 0, ejercicios 1–10; código comentado en español)
+├── git-BUH.sh   # Programa principal (menú, opción 0, ejercicios 1–10; código comentado en español)
 └── README.md    # Este archivo
 ```
 
-El código fuente de `git-BUH` incluye comentarios en cada función y en las partes más delicadas (SSH multi-clave, verificadores, escenarios de conflicto y pareja).
+El código fuente de `git-BUH.sh` incluye comentarios en cada función y en las partes más delicadas (SSH multi-clave, verificadores, escenarios de conflicto y pareja).
 
 ## Licencia y contribuciones
 
-Script de práctica educativa. Puedes copiar `git-BUH` donde quieras enseñar o practicar Git.
+Script de práctica educativa. Puedes copiar `git-BUH.sh` (y opcionalmente este `README.md`) donde quieras enseñar o practicar Git.
 
 Tras terminar, puedes borrar la carpeta de práctica y empezar de nuevo en otra ruta vacía; el historial Git queda solo en ese sandbox.
