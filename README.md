@@ -1,5 +1,7 @@
 # git-BUH
 
+<img width="810" height="860" alt="git-buh" src="https://github.com/user-attachments/assets/171b8cdf-c096-4ada-9495-2d7f26876c1a" />
+
 **Archivo del programa:** `git-BUH.sh`
 
 Programa interactivo en bash para **aprender Git de cero**: instala y configura Git en Ubuntu, explica cómo preparar tu cuenta de GitHub, y guía diez ejercicios prácticos con verificación automática (del repositorio local al flujo profesional).
