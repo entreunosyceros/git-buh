@@ -163,4 +163,4 @@ El código fuente de `git-BUH.sh` incluye comentarios en cada función y en las 
 
 Script de práctica educativa. Puedes copiar `git-BUH.sh` (y opcionalmente este `README.md`) donde quieras enseñar o practicar Git.
 
-Tras terminar, puedes borrar la carpeta de práctica y empezar de nuevo en otra ruta vacía; el historial Git queda solo en ese sandbox.
+Tras terminar, puedes borrar la carpeta de práctica y empezar de nuevo en otra ruta vacía.
