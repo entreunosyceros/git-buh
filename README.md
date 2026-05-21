@@ -4,7 +4,7 @@
 
 **Archivo del programa:** `git-BUH.sh`
 
-Programa interactivo en bash para **aprender Git de cero**: instala y configura Git en Ubuntu, explica cómo preparar tu cuenta de GitHub, y guía diez ejercicios prácticos con verificación automática (del repositorio local al flujo profesional).
+Programa interactivo en bash para **aprender Git de cero**: instala y configura Git en Ubuntu, explica cómo preparar tu cuenta de GitHub, y guía diez ejercicios prácticos con verificación automática.
 
 Todo el texto del menú y las guías está en **español**. Los ejercicios se ejecutan en el **directorio desde el que lanzas** `./git-BUH.sh` (tu sandbox de práctica).
 
